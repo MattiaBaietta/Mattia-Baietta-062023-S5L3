@@ -276,4 +276,11 @@ ul{
         width: 19%;
         
     }
+    .bggrande{
+        display: flex;
+        flex-direction: row;
+    }
+    .bggrande img{
+        order:0;
+    }
 }
