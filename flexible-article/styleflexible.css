@@ -1,0 +1,25 @@
+.bggrande{
+    background-color: #FBF7E3;
+    border-radius: 20px 20px 20px 20px;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    max-width: fit-content;/*forse da modificare*/
+    
+}
+
+/*per la versione mobile basta dare l'order agli elementi cambiare la display direction a column ed aggiustare il font*/
+.bggrande img{
+    width: 50%;
+}
+.bggrande h2{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-bottom: 20px;
+    
+}
+.descgrande{
+
+    
+    padding: 0px 20px 0px 20px;
+}

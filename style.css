@@ -1,0 +1,279 @@
+html{
+    max-width: 1700px;
+}
+
+body{
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+/*style nav*/
+.bggiallo{
+    display: flex;
+    justify-content: center;
+    background-color: #FBF7E3;
+    border-radius: 90px 90px 90px 90px;
+
+    width: 100%;
+
+    
+}
+ul li{
+    background-color: #F3DF85; 
+    font-size: 1em;
+    border-radius: 90px 90px 90px 90px;
+    padding: 10px;
+    list-style: none;
+    
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 35%;
+    order: 1;
+    
+}
+
+.shop img{
+    width: 15%;
+    padding-right: 20px;
+    
+}
+.shop{
+    font-size: 1.5em;
+    padding: 10px;
+    width: 80%;
+    order: 0;
+    margin-bottom: 10px;
+    
+    
+}
+ul{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-right: 40px;
+    
+    
+    justify-content: center;
+    
+}
+
+
+
+
+/*style articoli*/
+.bgproduct{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #FBF7E3;
+    border-radius: 90px 90px 90px 90px;
+    width: 100%;
+}
+.description{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+   
+   
+}
+.honey{
+    background-size: cover;
+    width: 100%;
+    border-radius: 90px 90px 0px 0px;
+    
+}
+.bgproduct h3{
+    font-weight: bold;
+    font-size: 1.1em;
+    
+    
+}
+.bgproduct input{
+    background-color: #F3DF85;
+    border-radius: 30px 30px 30px 30px;
+    border: none;
+    padding: 10px 30px;
+    
+
+}
+.addtocart{
+    
+    width: 40%;
+}
+.buy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 150px;
+    
+    
+    
+    
+}
+
+/*Style articolo flexible*/
+.bggrande{
+    background-color: #FBF7E3;
+    border-radius: 20px 20px 20px 20px;
+    padding: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;/*forse da modificare*/
+    
+}
+
+/*per la versione mobile basta dare l'order agli elementi cambiare la display direction a column ed aggiustare il font*/
+.bggrande img{
+    width: 100%;
+    order:1;
+}
+.bggrande h2{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-bottom: 20px;
+    
+}
+.descgrande{
+    padding: 0px 20px 0px 20px;
+    order: 0;
+}
+
+
+@media screen and (min-width:500px) {
+    body{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .hide{
+        display: none;
+    }
+    .bggiallo{
+        background-color: #FBF7E3;
+        border-radius: 90px 90px 90px 90px;
+        padding: 20px;
+        margin-left: 30px;
+
+        
+    }
+    ul li{
+        background-color: #F3DF85; 
+        font-size: 1em;
+        border-radius: 90px 90px 90px 90px;
+        padding:15px;
+        list-style: none;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        order: 1;
+        
+    }
+    .shop img{
+        width: 30%;
+        padding-right: 20px;
+        
+    }
+    .shop{
+        font-size: 1.5em;
+        padding: 30px;
+        width: 20%;
+        order: 1;
+        
+        
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+
+        
+    }
+    .bgproduct{
+        width: 45%;
+        margin-left: 9px;
+    }
+    .contenitoreprodotti{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+    }
+    h2{
+        font-size: 2em;
+    }
+
+
+}
+@media screen and (min-width:1100px) {
+
+    .bggiallo{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 20%;
+        border-radius: 0 0 0 0;
+        margin-left: 0;
+        height: 100%;
+    }
+    ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    ul li{
+        padding:50px 70px 50px 70px;
+        font-size: 1.4em;
+    }
+    .shop{
+        order :0;
+        padding:50px 70px 50px 70px;
+        font-size: 2em;
+
+    }
+    .shop img{
+        width: 100%;
+    }
+    body:not(nav){
+        margin-left: 400px;
+    }
+    .hide2{
+        display: none;
+    }
+    .bgproduct{
+        width: 32%;
+        
+    }
+}
+
+@media screen and (min-width:1300px) {
+    .hide{
+        display: inline;
+    }
+    .hide2{
+        display: inline;
+    }
+    .bgproduct{
+        width: 19%;
+        
+    }
+}
