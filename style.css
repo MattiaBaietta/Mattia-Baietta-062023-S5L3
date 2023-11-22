@@ -263,8 +263,9 @@ ul{
         width: 32%;
         
     }
-    input{
+    .addtocart{
         width: auto;
+        text-align: center;
     }
 }
 
