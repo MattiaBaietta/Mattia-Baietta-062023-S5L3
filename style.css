@@ -263,6 +263,9 @@ ul{
         width: 32%;
         
     }
+    input{
+        width: auto;
+    }
 }
 
 @media screen and (min-width:1300px) {
